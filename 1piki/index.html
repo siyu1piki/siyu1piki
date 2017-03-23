@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="css/diyu/iconfont.css" />
+		<link rel="stylesheet" href="css/search/iconfont.css" />
+		<link rel="stylesheet" href="css/gwc/iconfont.css" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/xy/iconfont.css"/>
+        
+		<script type="text/javascript" src="zns.js">
+        </script>
+	</head>
+	<body class="index">
+    <div class="control">
+       
+		<div id="tto">
+			<div class="wid">
+				<ul class="fl">
+					<li class="dropdown">
+						<div class="dt cw-icon">
+							<i class="iconfont" style="font-size: 15px;color: red;">
+								&#xe665;
+							</i>
+							<i class="ci-left">
+								
+							</i>
+							<span class="ui_at">北京</span>
+						</div>
+					</li>
+				</ul>
+				<ul class="fr">
+                    <li class="fore1">
+                        <a target="_blank" href="#" class="link-login">你好，请登录</a>&nbsp;&nbsp;<a href="#" class="link-regist style-red">免费注册</a>
+                    </li>
+                    <li class="spacer"></li>
+                    <li class="fore2">
+                        <div class="dt"><a target="_blank">我的订单</a></div>
+                    </li>
+                    <li class="spacer"></li>
+                    <li class="fore3 dorpdown">
+                        <div class="dt cw-icon">
+                        	<a target="_blank">我的京东</a>
+                        	<i class="ci-right"><s>◇</s></i>
+                        </div>
+                        <div class="dd dorpdown-layer"></div>
+                    </li>
+                    <li class="spacer"></li>
+                    <li class="fore4">
+                        <div class="dt"><a target="_blank">京东会员</a></div>
+                    </li>
+                    <li class="spacer"></li>
+                    <li class="fore5">
+                        <div class="dt"><a target="_blank">企业采购</a></div>
+                    </li>
+                    <li class="spacer"></li>
+                    <li class="fore8 dorpdown" id="ttbar-serv">
+                        <div class="dt cw-icon">客户服务<i class="ci-right"><s>◇</s></i></div>
+                        <div class="dd dorpdown-layer"></div>
+                    </li>
+                    <li class="spacer"></li>
+                    <li class="fore9 dorpdown" id="ttbar-navs">
+                        <div class="dt cw-icon">网站导航<i class="ci-right"><s>◇</s></i></div>
+                        <div class="dd dorpdown-layer"></div>
+                    </li>
+                    <li class="spacer"></li>
+                    <li class="fore10 mobile" id="J_mobile">
+        	            <div class="dt mobile_txt">手机京东</div>
+        		        <div class="mobile_static">
+                            <div class="mobile_static_qrcode"></div>
+                        </div>
+        	            <div id='J_mobile_pop' class='mod_loading mobile_pop'></div>
+                    </li>
+                </ul>
+			</div>
+		</div>
+		<div class="header">
+			<div class="wid">
+				<div class="logo">
+					<h1 class="logott" style="width: 100%;height: 100%;">
+						<a class="jdlog" href="#"></a>
+					</h1>
+				</div>
+				<div class="search">
+					<div class="from">
+						<input class="input" type="search" placeholder="爆款低至五折" onfocus="javascript:if(this.value=='请输入')this.value='';">
+						<button class="button">
+							<i class="iconfont" style="color: white;font-size: 25px;">
+								&#xe600;
+							</i>
+						</button>
+					</div>
+				</div>
+				<div class="setting">
+					<div class="gwk">
+						<i class="iconfont">&#xe6e4;</i>
+						<a href="#" style="color: red;cursor: pointer;">我的购物车</a>
+						<i class="gws" id="gws">0</i>
+					</div>
+				</div>
+				<div class="hotword" id="hotword">
+					<a href="#" style="color: red;">最高降2000</a>
+					<a href="#">领500神劵</a><a href="#">营养土9.9</a>
+					<a href="#">299减100</a><a href="#">亿元礼券</a>
+					<a href="#">孕妇装</a><a href="#">围巾男</a>
+					<a href="#">正品联盟</a><a href="#">电火锅</a>
+				</div>
+				<div class="navitem" id="navitem">
+					<ul class="nag1">
+						<li class="fore1"><a href="#">秒杀</a></li>
+						<li class="fore2"><a href="#">优惠券</a></li>
+						<li class="fore3"><a href="#">闪购</a></li>
+						<li class="fore4"><a href="#">拍卖</a></li>
+					</ul>
+					<div class="spacer"></div>
+					<ul class="nag2">
+						<li class="fore1"><a href="#">服装城</a></li>
+						<li class="fore2"><a href="#">京东超市</a></li>
+						<li class="fore3"><a href="#">生鲜</a></li>
+						<li class="fore4"><a href="#">全球购</a></li>
+					</ul>
+					<div class="spacer"></div>
+					<ul class="nag3">
+						<li class="fore1"><a href="#">京东金融</a></li>
+					</ul>
+				</div>
+				<div class="jd315">
+					<a href="#" class="jd315img"></a>
+				</div>
+			</div>
+		</div>
+        <div class="body">
+        	<div class="bodyleft">
+        		<ul class="blmu">
+        			<li><a href="#">家用电器</a></li>
+        			<li><a href="#">家用电器</a><span class="xiexian">/</span><a href="#">家用电器</a><span class="xiexian">/</span><a href="#">家用电器</a></li>
+        			<li><a href="#">家用电器</a><span class="xiexian">/</span><a href="#">家用电器</a></li>
+        			<li><a href="#">家用电器</a><span class="xiexian">/</span><a href="#">家用电器</a><span class="xiexian">/</span><a href="#">家用电器</a><span class="xiexian">/</span><a href="#">家用电器</a></li>
+        			<li><a href="#">家用电器</a><span class="xiexian">/</span><a href="#">家用电器</a><span class="xiexian">/</span><a href="#">家用电器</a><span class="xiexian">/</span><a href="#">家用电器</a></li>
+        			<li><a href="#">家用电器</a><span class="xiexian">/</span><a href="#">家用电器</a><span class="xiexian">/</span><a href="#">家用电器</a><span class="xiexian">/</span><a href="#">家用电器</a></li>
+        			<li><a href="#">家用电器</a><span class="xiexian">/</span><a href="#">家用电器</a><span class="xiexian">/</span><a href="#">家用电器</a><span class="xiexian">/</span><a href="#">家用电器</a></li>
+        			<li><a href="#">家用电器</a><span class="xiexian">/</span><a href="#">家用电器</a><span class="xiexian">/</span><a href="#">家用电器</a>
+        			<li><a href="#">家用电器</a><span class="xiexian">/</span><a href="#">家用电器</a>
+        			<li><a href="#">家用电器</a><span class="xiexian">/</span><a href="#">家用电器</a>
+        			<li><a href="#">家用电器</a><span class="xiexian">/</span><a href="#">家用电器</a><span class="xiexian">/</span><a href="#">家用电器</a><span class="xiexian">/</span><a href="#">家用电器</a></li>
+        			<li><a href="#">家用电器</a>
+        			<li><a href="#">家用电器</a><span class="xiexian">/</span><a href="#">家用电器</a><span class="xiexian">/</span><a href="#">家用电器</a><span class="xiexian">/</span><a href="#">家用电器</a></li>
+        			<li><a href="#">家用电器</a><span class="xiexian">/</span><a href="#">家用电器</a><span class="xiexian">/</span><a href="#">家用电器</a><span class="xiexian">/</span><a href="#">家用电器</a></li>
+        		</ul>
+        	</div>
+        	<div class="bodymid">
+        		<div class="bmtop">
+        			<div class="roll" id="roll">
+    					
+                        <div class="wrap">
+                            <ul>
+                                <li><a href="#"><img src="img/imgs/t1.jpg" /></a></li>
+                                <li><a href="#"><img src="img/imgs/4de790799ca420fdf2800ed56501b9f9.jpg" /></a></li>
+                                <li><a href="#"><img src="img/imgs/8e2e3a2933951025886f56c91a10873b.jpg" /></a></li>
+                                <li><a href="#"><img src="img/imgs/32f35b82242dfd624ce3d007a7962b54.jpg" /></a></li>
+                            </ul>
+                        </div>
+                    </div>
+        		</div>
+        		<div class="hd">
+        			<i class="yqbtn"></i>
+        		</div>
+        		<div class="bmd">
+        			<div class="bmdl">
+        				<img src="img/imgs/t2.jpg" />
+        			</div>
+        			<div class="bmdr">
+        				<img src="img/imgs/t2.jpg" />
+        			</div>
+        		</div>
+        	</div>
+        	<div class="bodyright">
+        		<div class="userbar">
+        			<div class="l_user">
+        				<div class="us_ll">
+        					<img src="img/icon/brus.jpg" style="width: 45PX;height: 45PX;display: block;border-radius: 23px;"/>
+        				</div>
+        				<div class="us_rr">
+        					<p class="hijd">Hi,欢迎来到京东！</p>
+        					<p>
+        						<a href="#">登录</a>
+        						<a href="#">注册</a>
+        					</p>
+        				</div>
+        			</div>
+        			<div class="p_user">
+        				<a href="#">新人福利</a>
+        				<a href="#">PLUS会员</a>
+        			</div>
+        		</div>
+        		<div class="news">
+        			<div class="newtop">
+        				<a href="#" style="padding-right: 12px;border-right: 1px solid #def0e1;" onmouseover="cxo()">促销</a>
+        				<a href="#" style="padding-left: 12px;" onmouseover="cxg()">公告</a>
+        				<div class="xhx" id="xhx" style="transform: translateX(0px);"></div>
+        			    <a href="#" style="position: absolute;right: 0;top: 8px;">更多</a>
+        			</div>
+        			<div class="newbody">
+        				<ul>
+        					<li class="newtems"><a href="#">听说京东很厉害的感觉啊啊啊啊啊</a></li>
+        					<li class="newtems"><a href="#">听说京东很厉害的感觉啊啊啊啊啊</a></li>
+        					<li class="newtems"><a href="#">听说京东很厉害的感觉啊啊啊啊啊</a></li>
+        					<li class="newtems"><a href="#">听说京东很厉害的感觉啊啊啊啊啊</a></li>
+        				</ul>
+        			</div>
+        		</div>
+        	    <div class="j_sever">
+        	    	<ul class="js_list">
+        	    		<li class="jsl_tems"><a href="#"><i class="hftb"></i><span class="txt">话费</span></a></li>
+        	    		<li class="jsl_tems"><a href="#"><i class="hftb"></i><span class="txt">话费</span></a></li>
+        	    		<li class="jsl_tems"><a href="#"><i class="hftb"></i><span class="txt">话费</span></a></li>
+        	    		<li class="jsl_tems"><a href="#"><i class="hftb"></i><span class="txt">话费</span></a></li>
+        	    		<li class="jsl_tems"><a href="#"><i class="hftb"></i><span class="txt">话费</span></a></li>
+        	    		<li class="jsl_tems"><a href="#"><i class="hftb"></i><span class="txt">话费</span></a></li>
+        	    		<li class="jsl_tems"><a href="#"><i class="hftb"></i><span class="txt">话费</span></a></li>
+        	    		<li class="jsl_tems"><a href="#"><i class="hftb"></i><span class="txt">话费</span></a></li>
+        	    		<li class="jsl_tems"><a href="#"><i class="hftb"></i><span class="txt">话费</span></a></li>
+        	    		<li class="jsl_tems"><a href="#"><i class="hftb"></i><span class="txt">话费</span></a></li>
+        	    		<li class="jsl_tems"><a href="#"><i class="hftb"></i><span class="txt">话费</span></a></li>
+        	    		<li class="jsl_tems"><a href="#"><i class="hftb"></i><span class="txt">话费</span></a></li>
+        	    	</ul>
+        	    </div>
+        	</div>
+        </div>	
+        <div class="body2">
+        	<i class="zsj"></i>
+        	<div class="b2top">
+        		<div class="btlef">
+        			<i class="szz"></i>
+        			<h3>京东秒杀</h3>
+        			<a class="zyn">总有你想不到的东西
+        				<i class="iconfont">&#xe72a;</i>
+        			</a>
+        		</div>
+        		<div class="btrig">
+        			<span class="dqcc">当前场次</span>
+        			<div class="djs">
+        				<div class="h">
+        					
+        				</div>
+        			</div>
+        			<span class="jsqg">后结束抢购</span>
+        		</div>
+        	</div>
+        	<div class="b2down">
+        		 <ul>
+        		 	<li class="shop1">
+        		 		<div class="mb"><p>萌宝</p></div>
+        		 		<a href="#" class="nftp"></a>
+        		 		<span class="yy"></span>
+        		 		<a href="#" class="nfjs"><p class="wz">【京东超市】爱他美Aptamil 幼儿配方奶粉3段(12-36个月适用)800g(德国原装进口) </p>
+        		 			<p class="jg"><i>¥</i><span>59.00</span></p>
+        		 			<p class="jgh"><i>¥</i><strike>168.00</strike></p>
+        		 		</a>
+        		 	</li>
+        		 	<li class="shop1">
+        		 		<div class="mb"><p>萌宝</p></div>
+        		 		<a href="#" class="nftp"></a>
+        		 		<span class="yy"></span>
+        		 		<a href="#" class="nfjs"><p class="wz">【京东超市】爱他美Aptamil 幼儿配方奶粉3段(12-36个月适用)800g(德国原装进口) </p>
+        		 			<p class="jg"><i>¥</i><span>59.00</span></p>
+        		 			<p class="jgh"><i>¥</i><strike>168.00</strike></p>
+        		 		</a>
+        		 	</li>
+        		 	<li class="shop1">
+        		 		<div class="mb"><p>萌宝</p></div>
+        		 		<a href="#" class="nftp"></a>
+        		 		<span class="yy"></span>
+        		 		<a href="#" class="nfjs"><p class="wz">【京东超市】爱他美Aptamil 幼儿配方奶粉3段(12-36个月适用)800g(德国原装进口) </p>
+        		 			<p class="jg"><i>¥</i><span>59.00</span></p>
+        		 			<p class="jgh"><i>¥</i><strike>168.00</strike></p>
+        		 		</a>
+        		 	</li>
+        		 	<li class="shop1">
+        		 		<div class="mb"><p>萌宝</p></div>
+        		 		<a href="#" class="nftp"></a>
+        		 		<span class="yy"></span>
+        		 		<a href="#" class="nfjs"><p class="wz">【京东超市】爱他美Aptamil 幼儿配方奶粉3段(12-36个月适用)800g(德国原装进口) </p>
+        		 			<p class="jg"><i>¥</i><span>59.00</span></p>
+        		 			<p class="jgh"><i>¥</i><strike>168.00</strike></p>
+        		 		</a>
+        		 	</li>
+        		 	<li class="shop1">
+        		 		<div class="mb"><p>萌宝</p></div>
+        		 		<a href="#" class="nftp"></a>
+        		 		<span class="yy"></span>
+        		 		<a href="#" class="nfjs"><p class="wz">【京东超市】爱他美Aptamil 幼儿配方奶粉3段(12-36个月适用)800g(德国原装进口) </p>
+        		 			<p class="jg"><i>¥</i><span>59.00</span></p>
+        		 			<p class="jgh"><i>¥</i><strike>168.00</strike></p>
+        		 		</a>
+        		 	</li>
+        		 	<a href="#" class="sxtp"></a>
+        		 </ul>
+        	</div>
+        </div>
+        <div class="body3">
+        	<div class="wid">
+        		<div class="b3le">
+        			<div class="b3ltop">
+        				<h3>发现好货</h3>
+        			    <a class="zyn">发现品质生活
+        				    <i class="iconfont">&#xe72a;</i>
+        			    </a>
+        			</div>
+        			<div class="b3ldown">
+        				<ul class="fxlist">
+        					<li class="fxlli">
+        						<a href="#" class="fxlia">
+        							<p class="fxlip">FANCL净白精华露</p>
+        							<img class="fxliimg" src="img/icon/kh.jpg"/>
+        						</a>
+        					</li>
+        					<li class="fxlli">
+        						<a href="#" class="fxlia">
+        							<p class="fxlip">FANCL净白精华露</p>
+        							<img class="fxliimg" src="img/icon/kh.jpg"/>
+        						</a>
+        					</li>
+        					<li class="fxlli">
+        						<a href="#" class="fxlia">
+        							<p class="fxlip">FANCL净白精华露</p>
+        							<img class="fxliimg" src="img/icon/kh.jpg"/>
+        						</a>
+        					</li>
+        					<li class="fxlli">
+        						<a href="#" class="fxlia">
+        							<p class="fxlip">FANCL净白精华露</p>
+        							<img class="fxliimg" src="img/icon/kh.jpg"/>
+        						</a>
+        					</li>
+        					<li class="fxlli">
+        						<a href="#" class="fxlia">
+        							<p class="fxlip">FANCL净白精华露</p>
+        							<img class="fxliimg" src="img/icon/kh.jpg"/>
+        						</a>
+        					</li>
+        					<li class="fxlli">
+        						<a href="#" class="fxlia">
+        							<p class="fxlip">FANCL净白精华露</p>
+        							<img class="fxliimg" src="img/icon/kh.jpg"/>
+        						</a>
+        					</li>
+        				</ul>
+        			</div>
+        		</div>
+        		<div class="b3mid">
+        			<div class="b3ltop">
+        				<h3>发现好货</h3>
+        			    <a class="zyn">发现品质生活
+        				    <i class="iconfont">&#xe72a;</i>
+        			    </a>
+        			</div>
+        			<div class="b3ldown">
+        				<ul class="fxlist">
+        					<li class="fxlli">
+        						<a href="#" class="fxlia">
+        							<p class="fxlip">FANCL净白精华露</p>
+        							<img class="fxliimg" src="img/icon/kh.jpg"/>
+        						</a>
+        					</li>
+        					<li class="fxlli">
+        						<a href="#" class="fxlia">
+        							<p class="fxlip">FANCL净白精华露</p>
+        							<img class="fxliimg" src="img/icon/kh.jpg"/>
+        						</a>
+        					</li>
+        					<li class="fxlli">
+        						<a href="#" class="fxlia">
+        							<p class="fxlip">FANCL净白精华露</p>
+        							<img class="fxliimg" src="img/icon/kh.jpg"/>
+        						</a>
+        					</li>
+        					<li class="fxlli">
+        						<a href="#" class="fxlia">
+        							<p class="fxlip">FANCL净白精华露</p>
+        							<img class="fxliimg" src="img/icon/kh.jpg"/>
+        						</a>
+        					</li>
+        					<li class="fxlli">
+        						<a href="#" class="fxlia">
+        							<p class="fxlip">FANCL净白精华露</p>
+        							<img class="fxliimg" src="img/icon/kh.jpg"/>
+        						</a>
+        					</li>
+        					<li class="fxlli">
+        						<a href="#" class="fxlia">
+        							<p class="fxlip">FANCL净白精华露</p>
+        							<img class="fxliimg" src="img/icon/kh.jpg"/>
+        						</a>
+        					</li>
+        				</ul>
+        			</div>
+        		</div>
+        		<div class="b3ri">
+        			<div class="b3ltop">
+        				<h3>发现好货</h3>
+        			    <a class="zyn">发现品质生活
+        				    <i class="iconfont">&#xe72a;</i>
+        			    </a>
+        			</div>
+        			<div class="b3ldown">
+        				<ul class="fxlist">
+        					<li class="fxlli">
+        						<a href="#" class="fxlia">
+        							<p class="fxlip">FANCL净白精华露</p>
+        							<img class="fxliimg" src="img/icon/kh.jpg"/>
+        						</a>
+        					</li>
+        					<li class="fxlli">
+        						<a href="#" class="fxlia">
+        							<p class="fxlip">FANCL净白精华露</p>
+        							<img class="fxliimg" src="img/icon/kh.jpg"/>
+        						</a>
+        					</li>
+        					<li class="fxlli">
+        						<a href="#" class="fxlia">
+        							<p class="fxlip">FANCL净白精华露</p>
+        							<img class="fxliimg" src="img/icon/kh.jpg"/>
+        						</a>
+        					</li>
+        					<li class="fxlli">
+        						<a href="#" class="fxlia">
+        							<p class="fxlip">FANCL净白精华露</p>
+        							<img class="fxliimg" src="img/icon/kh.jpg"/>
+        						</a>
+        					</li>
+        					<li class="fxlli">
+        						<a href="#" class="fxlia">
+        							<p class="fxlip">FANCL净白精华露</p>
+        							<img class="fxliimg" src="img/icon/kh.jpg"/>
+        						</a>
+        					</li>
+        					<li class="fxlli">
+        						<a href="#" class="fxlia">
+        							<p class="fxlip">FANCL净白精华露</p>
+        							<img class="fxliimg" src="img/icon/kh.jpg"/>
+        						</a>
+        					</li>
+        				</ul>
+        			</div>
+        		</div>
+        	</div>
+        </div>
+        <div class="body4">
+        	<div class="wid">
+        		<div class="lim">
+        			<img src="img/imgs/ljzx.png"/>
+        		</div>
+        		<div class="grfour">
+        			<ul class="gful">
+        				<li class="gfli">
+        					<a class="gfa" href="#">
+        						<div class="gfal">
+        							<p class="gfalp"><i>¥</i>60</p>
+        							<p class="gfalp2">仅可购买第三方鞋靴和箱包品类</p>
+        							<p class="gfalp3">消费满399可用</p>
+        							<p class="gdhl">更多好劵</p>
+        						</div>
+        						<img class="gdimg" src="img/imgs/xz.jpg"/>
+        					</a>
+        				</li>
+        				<li class="gfli">
+        					<a class="gfa" href="#">
+        						<div class="gfal">
+        							<p class="gfalp"><i>¥</i>60</p>
+        							<p class="gfalp2">仅可购买第三方鞋靴和箱包品类</p>
+        							<p class="gfalp3">消费满399可用</p>
+        							<p class="gdhl">更多好劵</p>
+        						</div>
+        						<img class="gdimg" src="img/imgs/xz.jpg"/>
+        					</a>
+        				</li>
+        				<li class="gfli">
+        					<a class="gfa" href="#">
+        						<div class="gfal">
+        							<p class="gfalp"><i>¥</i>60</p>
+        							<p class="gfalp2">仅可购买第三方鞋靴和箱包品类</p>
+        							<p class="gfalp3">消费满399可用</p>
+        							<p class="gdhl">更多好劵</p>
+        						</div>
+        						<img class="gdimg" src="img/imgs/xz.jpg"/>
+        					</a>
+        				</li>
+        				<li class="gfli">
+        					<a class="gfa" href="#">
+        						<div class="gfal">
+        							<p class="gfalp"><i>¥</i>60</p>
+        							<p class="gfalp2">仅可购买第三方鞋靴和箱包品类</p>
+        							<p class="gfalp3">消费满399可用</p>
+        							<p class="gdhl">更多好劵</p>
+        						</div>
+        						<img class="gdimg" src="img/imgs/xz.jpg"/>
+        					</a>
+        				</li>
+        				<li class="gfli">
+        					<a class="gfa" href="#">
+        						<div class="gfal">
+        							<p class="gfalp"><i>¥</i>60</p>
+        							<p class="gfalp2">仅可购买第三方鞋靴和箱包品类</p>
+        							<p class="gfalp3">消费满399可用</p>
+        							<p class="gdhl">更多好劵</p>
+        						</div>
+        						<img class="gdimg" src="img/imgs/xz.jpg"/>
+        					</a>
+        				</li>
+        			</ul>
+        		</div>
+        	</div>
+        </div>
+        <div class="body5">
+        	<div class="b5tit">
+        		<h3>享品质</h3>
+        	</div>
+        	<div class="b5body">
+        		<ul class="b5list">
+        			<li class="b5lili">
+        				<a class="b5lla" href="#">
+        					<div class="b5lef"></div>
+        					<img class="b5arimg" />
+        				</a>
+        			</li>
+        			<li class="b5lili">
+        				<a class="b5lla" href="#">
+        					<div class="b5lef"></div>
+        					<img class="b5arimg" />
+        				</a>
+        			</li>
+        			<li class="b5liMP4">
+        				<div class="vitop">
+        					<p class="jdzb">京东直播</p>
+        					<p></p>
+        				</div>
+        				<video class="mp4" controls loop poster="/img/2009.jgp">
+        					<source src="video/wbnr.mp4" type="video/mp4"></source>
+        				</video>
+        			</li>
+        			<li class="b5lili">
+        				<a class="b5lla" href="#">
+        					<div class="b5lef"></div>
+        					<img class="b5arimg" />
+        				</a>
+        			</li>
+        			<li class="b5lili">
+        				<a class="b5lla" href="#">
+        					<div class="b5lef"></div>
+        					<img class="b5arimg" />
+        				</a>
+        			</li>
+        			<li class="b5lili">
+        				<a class="b5lla" href="#" style="float:left;">
+        					<div class="b5lef"></div>
+        					<img class="b5arimg" />
+        				</a>
+        			</li>
+        			<li class="b5lili">
+        				<a class="b5lla" href="#">
+        					<div class="b5lef"></div>
+        					<img class="b5arimg" />
+        				</a>
+        			</li>
+        			<li class="b5lili" style="float: right;">
+        				<a class="b5lla" href="#">
+        					<div class="b5lef"></div>
+        					<img class="b5arimg" />
+        				</a>
+        			</li>
+        		</ul>
+        	</div>
+        </div>
+        <div class="body6">
+        	<div class="wid">
+        		<ul class="b6ul">
+        			<li class="b6li">
+        				<a href="#" class="b6a">
+        					<img src="img/imgs/qm315.jpg"/>
+        				</a>
+        			</li>
+        			<li class="b6li">
+        				<a href="#" class="b6a">
+        					<img src="img/imgs/qm315.jpg"/>
+        				</a>
+        			</li>
+        			<li class="b6li">
+        				<a href="#" class="b6a">
+        					<img src="img/imgs/qm315.jpg"/>
+        				</a>
+        			</li>
+        		</ul>
+        	</div>
+        </div>
+        <div class="body7">
+        	
+        </div>
+        <script type="text/javascript" src="js/function.js" ></script>
+	</body>	
+	
+</html>

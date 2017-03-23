@@ -1,0 +1,59 @@
+* {
+    margin:0;
+    padding:0;
+/*����ʻ���ϸ��*/
+    -webkit-text-stroke-width: 0px;
+    -moz-text-stroke-width: 0px;
+    -o-text-stroke-width: 0px;
+    -ms-text-stroke-width: 0px;
+/*�߿���ڼ�����ڿ�Ⱥ͸߶�֮��*/
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing:border-box;
+}
+body {
+    font-family: "Microsoft Yahei", "simsun", "Arial";
+    background-color:#FFF;
+    font-size: 12px;
+    color: #666;
+}
+a {
+	color: #999;
+    font-size: 12px;
+    text-decoration: none;
+    blr:expression(this.onFocus=this.blur());
+}
+input,select,textarea {
+    vertical-align:middle;
+    width: auto;
+    outline: none;
+    border:0;    
+}
+select {
+    appearance: normal;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+img {
+    vertical-align:middle;
+    border:0;
+    outline:none;
+}
+
+div, p, dl, dt, dd, ul, ol, li, h1,h2,h3,h4,h5,h6 {
+    display: block;
+    width: auto; 
+    height: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing:0px;
+    border: 0;
+}
+i{
+	font-style: normal;
+}
